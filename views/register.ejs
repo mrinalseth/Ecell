@@ -1,0 +1,28 @@
+
+<%- include("partials/header") %>
+<link rel="stylesheet" type="text/css" href="/stylesheets/form.css">
+<div class="container">
+    <form id="form" class="form" action="/register" method="POST">
+        <h2>Register</h2>
+        <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Enter username" required>
+            <small>Error msg</small>
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter email" required>
+            <small>Error msg</small>
+        </div>
+        <div class="form-control">
+            <label for="textbox">Message</label>
+            <textarea maxlength="100" name="textbox" id="textbox" cols="30" rows="10" required></textarea>
+            <small>Error msg</small>
+        </div>
+        <button>Submit</button>
+    </form>
+</div>
+
+
+</body>
+</html>  
